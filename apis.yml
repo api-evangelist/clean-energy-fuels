@@ -28,6 +28,8 @@ apis:
     description: >-
       The Clean Energy Fuels API provides access to platform services and data for enterprise integration and automation.
 common:
+  - type: LinkedIn
+    url: https://www.linkedin.com/company/clean-energy-fuels-corp
   - type: Website
     url: https://www.cleanenergyfuels.com
 maintainers:

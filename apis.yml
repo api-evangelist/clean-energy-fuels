@@ -27,38 +27,94 @@ accessModel:
   method: derived
 image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/clean-energy-fuels.png
 tags:
-  - Natural Gas
-  - Renewable
-  - Transportation
-description: >-
-  Clean Energy Fuels is a major US corporation and Fortune 1000 company. The Clean Energy Fuels API provides programmatic access to its platform services, data, and integrations for enterprise customers and partners.
+- Natural Gas
+- Renewables
+- Transportation
+- Renewable Natural Gas
+- Hydrogen
+- Fleet Fueling
+- LNG
+- Energy
+tags_raw:
+- Natural Gas
+- Renewable
+- Transportation
+- Renewable Natural Gas
+- Hydrogen
+- Fleet Fueling
+- LNG
+- Energy
+description: 'Clean Energy Fuels Corp. (Nasdaq: CLNE) is North America''s largest provider of renewable natural
+  gas (RNG) for the transportation industry. It produces RNG at dairy-farm and landfill facilities and delivers
+  it as CNG or LNG through a network of more than 600 fueling stations across the United States and Canada, alongside
+  hydrogen fueling, bulk LNG and turnkey fleet services. The company publishes no developer program, public API,
+  SDK or machine-readable contract; its only machine-readable surface is an llms.txt at the apex domain and a React
+  station locator that reads static JSON from a contractor''s GitHub repository.'
 created: '2026-04-19'
-modified: '2026-04-19'
+modified: '2026-09-17'
 specificationVersion: '0.23'
-apis:
-  - aid: clean-energy-fuels:clean-energy-fuels-api
-    name: Clean Energy Fuels API
-    tags:
-      - Natural Gas
-      - Renewable
-      - Transportation
-    image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/apis-json-logo.jpg
-    baseURL: https://api.cleanenergyfuels.com
-    humanURL: https://developer.cleanenergyfuels.com
-    properties:
-      - url: https://developer.cleanenergyfuels.com/docs
-        type: Documentation
-    description: >-
-      The Clean Energy Fuels API provides access to platform services and data for enterprise integration and automation.
+apis: []
 common:
-  - type: DomainSecurity
-    url: security/clean-energy-fuels-domain-security.yml
-  - type: LinkedIn
-    url: https://www.linkedin.com/company/clean-energy-fuels-corp
-  - type: Website
-    url: https://www.cleanenergyfuels.com
-  - url: https://cleanenergyfuels.com/feed
-    type: Blog
+- type: DomainSecurity
+  url: security/clean-energy-fuels-domain-security.yml
+- type: LinkedIn
+  url: https://www.linkedin.com/company/clean-energy-fuels-corp
+- url: https://cleanenergyfuels.com/feed
+  type: Blog
+- type: Website
+  url: https://cleanenergyfuels.com
+- type: LLMsTxt
+  url: llms/clean-energy-fuels-llms.txt
+- type: Support
+  url: https://cleanenergyfuels.com/customer-service
+- type: TermsOfService
+  url: https://cleanenergyfuels.com/terms-of-use
+- type: PrivacyPolicy
+  url: https://cleanenergyfuels.com/privacy-policy
+- type: Newsroom
+  url: https://cleanenergyfuels.com/about-us/newsroom
+- type: InvestorRelations
+  url: https://investors.cleanenergyfuels.com/
+- type: Twitter
+  url: https://twitter.com/ce_renewables
+- type: YouTube
+  url: https://www.youtube.com/user/CENatGas
 maintainers:
-  - FN: Kin Lane
-    email: kin@apievangelist.com
+- FN: Kin Lane
+  email: kin@apievangelist.com
+x-enrichment:
+  date: '2026-09-17'
+  status: minimal
+  artifacts_added: 2
+  pass: local-v3
+x-coverage:
+  state: none
+  reason: not-a-software-company
+  detail: Clean Energy Fuels is a renewable-natural-gas producer and fueling-station operator whose public surface
+    is a WordPress marketing site, a Q4 investor site and a React station locator; the api.cleanenergyfuels.com
+    and developer.cleanenergyfuels.com hosts the prior scaffolded record named do not resolve in DNS (NXDOMAIN),
+    every /openapi.json, /graphql, /.well-known/* and agent-card path on cleanenergyfuels.com, www and investors
+    404s (negative control 404s too), stations.cleanenergyfuels.com answers 500 for every non-root path, no GitHub
+    org or npm/PyPI package exists, and the station locator reads its data from a static allstations.json in a contractor's
+    (KMicro-Tech) GitHub repo rather than a company-served API. The customer fuel-card portal named in llms.txt
+    has no public link or docs.
+  evidence:
+  - url: https://api.cleanenergyfuels.com/
+    status: 0
+    note: NXDOMAIN
+  - url: https://developer.cleanenergyfuels.com/docs
+    status: 0
+    note: NXDOMAIN
+  - url: https://cleanenergyfuels.com/openapi.json
+    status: 404
+  - url: https://cleanenergyfuels.com/.well-known/agent-card.json
+    status: 404
+  - url: https://cleanenergyfuels.com/.well-known/clean-energy-fuels-negative-control-9c1f2a7e.json
+    status: 404
+  - url: https://stations.cleanenergyfuels.com/openapi.json
+    status: 500
+  - url: https://cleanenergyfuels.com/llms.txt
+    status: 200
+  - url: https://api.github.com/orgs/cleanenergyfuels
+    status: 404
+  checked: '2026-09-17'

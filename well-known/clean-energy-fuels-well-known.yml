@@ -1,0 +1,215 @@
+generated: '2026-09-17'
+method: probed
+source: 'live HTTPS probes of every host the record knows: cleanenergyfuels.com, www.cleanenergyfuels.com, stations.cleanenergyfuels.com,
+  investors.cleanenergyfuels.com (api.cleanenergyfuels.com and developer.cleanenergyfuels.com are NXDOMAIN and were
+  not probed)'
+hit_count: 0
+note: No host serves any /.well-known/ discovery document, apis.json, or A2A agent card. This manifest records the
+  absence; no WellKnown/SecurityTxt/AgentCard pointer is emitted in apis.yml because nothing was served. The scaffolded
+  api.cleanenergyfuels.com and developer.cleanenergyfuels.com hosts in the prior record do not resolve in DNS (NXDOMAIN).
+unresolved_hosts:
+- host: api.cleanenergyfuels.com
+  dns: NXDOMAIN
+- host: developer.cleanenergyfuels.com
+  dns: NXDOMAIN
+hosts:
+- host: cleanenergyfuels.com
+  documents:
+  - path: /.well-known/security.txt
+    status: 404
+    file: null
+  - path: /.well-known/openid-configuration
+    status: 404
+    file: null
+  - path: /.well-known/oauth-authorization-server
+    status: 404
+    file: null
+  - path: /.well-known/oauth-protected-resource
+    status: 404
+    file: null
+  - path: /.well-known/api-catalog
+    status: 404
+    file: null
+  - path: /.well-known/ai-plugin.json
+    status: 404
+    file: null
+  - path: /.well-known/ucp.json
+    status: 404
+    file: null
+  - path: /.well-known/acp.json
+    status: 404
+    file: null
+  - path: /.well-known/aauth-resource.json
+    status: 404
+    file: null
+  - path: /.well-known/apis.json
+    status: 404
+    file: null
+  - path: /apis.json
+    status: 404
+    file: null
+  - path: /apis.yml
+    status: 404
+    file: null
+  - path: /.well-known/agent-card.json
+    status: 404
+    file: null
+  - path: /.well-known/agent.json
+    status: 404
+    file: null
+  note: Apex WordPress host. Every well-known, apis.json and agent-card path returns a hard 404; the negative-control
+    path also 404s, so the 404s are real. Only /llms.txt and /robots.txt are served (llms.txt saved under llms/).
+  negative_control:
+    path: /.well-known/clean-energy-fuels-negative-control-9c1f2a7e.json
+    status: 404
+  path_echo_control: passed
+- host: www.cleanenergyfuels.com
+  documents:
+  - path: /.well-known/security.txt
+    status: 301
+    file: null
+  - path: /.well-known/openid-configuration
+    status: 301
+    file: null
+  - path: /.well-known/oauth-authorization-server
+    status: 301
+    file: null
+  - path: /.well-known/oauth-protected-resource
+    status: 301
+    file: null
+  - path: /.well-known/api-catalog
+    status: 301
+    file: null
+  - path: /.well-known/ai-plugin.json
+    status: 301
+    file: null
+  - path: /.well-known/ucp.json
+    status: 301
+    file: null
+  - path: /.well-known/acp.json
+    status: 301
+    file: null
+  - path: /.well-known/aauth-resource.json
+    status: 301
+    file: null
+  - path: /.well-known/apis.json
+    status: 301
+    file: null
+  - path: /apis.json
+    status: 301
+    file: null
+  - path: /apis.yml
+    status: 301
+    file: null
+  - path: /.well-known/agent-card.json
+    status: 301
+    file: null
+  - path: /.well-known/agent.json
+    status: 301
+    file: null
+  note: Every path 301s to the apex host cleanenergyfuels.com, where the same path 404s. Recorded as the 301 observed,
+    not followed.
+  negative_control:
+    path: /.well-known/clean-energy-fuels-negative-control-9c1f2a7e.json
+    status: 301
+  path_echo_control: passed
+- host: stations.cleanenergyfuels.com
+  documents:
+  - path: /.well-known/security.txt
+    status: 500
+    file: null
+  - path: /.well-known/openid-configuration
+    status: 500
+    file: null
+  - path: /.well-known/oauth-authorization-server
+    status: 500
+    file: null
+  - path: /.well-known/oauth-protected-resource
+    status: 500
+    file: null
+  - path: /.well-known/api-catalog
+    status: 500
+    file: null
+  - path: /.well-known/ai-plugin.json
+    status: 500
+    file: null
+  - path: /.well-known/ucp.json
+    status: 500
+    file: null
+  - path: /.well-known/acp.json
+    status: 500
+    file: null
+  - path: /.well-known/aauth-resource.json
+    status: 500
+    file: null
+  - path: /.well-known/apis.json
+    status: 500
+    file: null
+  - path: /apis.json
+    status: 500
+    file: null
+  - path: /apis.yml
+    status: 500
+    file: null
+  - path: /.well-known/agent-card.json
+    status: 500
+    file: null
+  - path: /.well-known/agent.json
+    status: 500
+    file: null
+  note: "React station-locator app on a Phusion Passenger host. Every non-root path, including the negative control,\
+    \ returns a 500 \"Web application could not be started\" HTML page (4,393 bytes) \u2014 a catch-all error, not\
+    \ a document."
+  negative_control:
+    path: /.well-known/clean-energy-fuels-negative-control-9c1f2a7e.json
+    status: 500
+  path_echo_control: passed
+- host: investors.cleanenergyfuels.com
+  documents:
+  - path: /.well-known/security.txt
+    status: 404
+    file: null
+  - path: /.well-known/openid-configuration
+    status: 404
+    file: null
+  - path: /.well-known/oauth-authorization-server
+    status: 404
+    file: null
+  - path: /.well-known/oauth-protected-resource
+    status: 404
+    file: null
+  - path: /.well-known/api-catalog
+    status: 404
+    file: null
+  - path: /.well-known/ai-plugin.json
+    status: 404
+    file: null
+  - path: /.well-known/ucp.json
+    status: 404
+    file: null
+  - path: /.well-known/acp.json
+    status: 404
+    file: null
+  - path: /.well-known/aauth-resource.json
+    status: 404
+    file: null
+  - path: /.well-known/apis.json
+    status: 404
+    file: null
+  - path: /apis.json
+    status: 404
+    file: null
+  - path: /apis.yml
+    status: 404
+    file: null
+  - path: /.well-known/agent-card.json
+    status: 404
+    file: null
+  - path: /.well-known/agent.json
+    status: 404
+    file: null
+  note: Q4 investor-relations host. Every path 404s; negative control 404s.
+  negative_control:
+    path: /.well-known/clean-energy-fuels-negative-control-9c1f2a7e.json
+    status: 404
+  path_echo_control: passed

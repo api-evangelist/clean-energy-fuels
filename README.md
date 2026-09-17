@@ -64,7 +64,7 @@
 > Full detail: **[Where this data comes from](https://apievangelist.com/about/where-our-data-comes-from)**
 <!-- API-EVANGELIST-PROVENANCE:END -->
 
-Clean Energy Fuels is a major US corporation and Fortune 1000 company. The Clean Energy Fuels API provides programmatic access to its platform services, data, and integrations for enterprise customers and partners.
+Clean Energy Fuels Corp. (Nasdaq: CLNE) is North America's largest provider of renewable natural gas (RNG) for the transportation industry, operating 600+ CNG/LNG fueling stations across the US and Canada plus hydrogen fueling and bulk LNG services. The company publishes no developer program, public API, SDK or machine-readable contract: the api.cleanenergyfuels.com and developer.cleanenergyfuels.com hosts an earlier scaffolded record named do not resolve in DNS. Its only machine-readable surface is an [llms.txt](https://cleanenergyfuels.com/llms.txt) at the apex domain, saved verbatim under `llms/`. See `x-coverage` in `apis.yml` for the probe evidence.
 
 **URL:** [Visit APIs.json URL](https://raw.githubusercontent.com/api-evangelist/clean-energy-fuels/refs/heads/main/apis.yml)
 

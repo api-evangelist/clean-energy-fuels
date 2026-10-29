@@ -1,4 +1,4 @@
-# Clean Energy Fuels (clean-energy-fuels)
+# Clean Energy Fuels
 
 <!-- API-EVANGELIST-PROVENANCE:BEGIN -->
 > ### About this repository
@@ -64,23 +64,101 @@
 > Full detail: **[Where this data comes from](https://apievangelist.com/about/where-our-data-comes-from)**
 <!-- API-EVANGELIST-PROVENANCE:END -->
 
-Clean Energy Fuels Corp. (Nasdaq: CLNE) is North America's largest provider of renewable natural gas (RNG) for the transportation industry, operating 600+ CNG/LNG fueling stations across the US and Canada plus hydrogen fueling and bulk LNG services. The company publishes no developer program, public API, SDK or machine-readable contract: the api.cleanenergyfuels.com and developer.cleanenergyfuels.com hosts an earlier scaffolded record named do not resolve in DNS. Its only machine-readable surface is an [llms.txt](https://cleanenergyfuels.com/llms.txt) at the apex domain, saved verbatim under `llms/`. See `x-coverage` in `apis.yml` for the probe evidence.
+Clean Energy Fuels Corp. (Nasdaq: CLNE) is North America's largest provider of renewable natural gas (RNG) for the transportation industry. It produces RNG at dairy-farm and landfill facilities and delivers it as CNG or LNG through a network of more than 600 fueling stations across the United States and Canada, alongside hydrogen fueling, bulk LNG and turnkey fleet services. The company publishes no developer program, public API, SDK or machine-readable contract; its only machine-readable surface is an llms.txt at the apex domain and a React station locator that reads static JSON from a contractor's GitHub repository.
 
-**URL:** [Visit APIs.json URL](https://raw.githubusercontent.com/api-evangelist/clean-energy-fuels/refs/heads/main/apis.yml)
+**Areas:** Natural Gas · Renewables · Transportation · Renewable Natural Gas · Hydrogen · Fleet Fueling · LNG · Energy
 
-**Run:** [Capabilities Using Naftiko](https://github.com/naftiko/fleet?utm_source=api-evangelist&utm_medium=readme&utm_campaign=company-api-evangelist&utm_content=repo)
+## Clean Energy Fuels on APIs.io
 
-## Tags:
+Everything profiled for Clean Energy Fuels is published on APIs.io rather than in this repository. Start at the provider page — **[apis.io/providers/clean-energy-fuels/](https://apis.io/providers/clean-energy-fuels/)** — or go straight to one of the APIs or properties below.
 
- - Natural Gas, Renewable, Transportation
+### Published properties
 
-## Timestamps
+Each property below is a page on APIs.io carrying the machine-readable artifact and what it says.
 
-- **Created:** 2026-04-19
-- **Modified:** 2026-04-19
+#### Security (1)
 
-## Maintainers
+Authentication, trust centre, and vulnerability disclosure.
 
-**FN:** Kin Lane
+- [Clean Energy Fuels Domain Security](https://apis.io/security/clean-energy-fuels/clean-energy-fuels-domain-security/)
 
-**Email:** kin@apievangelist.com
+#### Plans and pricing (1)
+
+Published plans, tiers and prices.
+
+- [Clean Energy Fuels Plans Pricing](https://apis.io/plans/clean-energy-fuels/clean-energy-fuels-plans-pricing/)
+
+#### Rate limits (1)
+
+Published request limits.
+
+- [Clean Energy Fuels Rate Limits](https://apis.io/rate-limits/clean-energy-fuels/clean-energy-fuels-rate-limits/)
+
+#### FinOps (1)
+
+What the API costs to run, by operation.
+
+- [Clean Energy Fuels Finops](https://apis.io/finops/clean-energy-fuels/clean-energy-fuels-finops/)
+
+## Where to find this API
+
+Links to the company's own pages. This repository publishes no copy of their specifications — the canonical document is theirs and lives at the URLs below.
+
+- [Website](https://cleanenergyfuels.com)
+- [Support](https://cleanenergyfuels.com/customer-service)
+- [Blog](https://cleanenergyfuels.com/feed)
+- [Terms of service](https://cleanenergyfuels.com/terms-of-use)
+- [Privacy policy](https://cleanenergyfuels.com/privacy-policy)
+
+## API Evangelist rating
+
+**Kin Score 12.7** — emerging · rubric 0.24.0 · scored 2026-10-17
+
+| Facet | Score |
+|---|---|
+| Discoverability | 56.3 |
+| Contract quality | 0.0 |
+| Contract governance | 0.0 |
+| Operational transparency | 5.3 |
+| Developer ergonomics | 7.1 |
+| Access clarity | 26.3 |
+
+**Agent readiness 0.6** — human-only
+
+| Agent-readiness dimension | Result |
+|---|---|
+| Spec Presence | — |
+| Agentic Access | — |
+| Reversibility Documented | — |
+| MCP Server | — |
+| Auth Clarity | — |
+| Idempotency | — |
+| Error Semantics | — |
+| OpenAPI Examples | — |
+| Rate Limit Signal | derived (partial credit) |
+| Event Surface Described | — |
+| Agent Skills | — |
+| Well Known Catalog | — |
+| Consent Identity | — |
+| Agent Card | — |
+| Dry Run Mode | — |
+| Delegated Identity | — |
+| Protected Resource Metadata | — |
+| Dynamic Client Registration | — |
+| Agentic Commerce | — |
+
+**Regulatory alignment 11.5** — Energy & Utilities
+
+The rubric is published at [github.com/api-evangelist/kin-score](https://github.com/api-evangelist/kin-score). The per-check breakdown behind these numbers — which checks were earned, partial or missed — along with score history and how this provider compares to its peers, is available at [apis.io/providers/clean-energy-fuels/](https://apis.io/providers/clean-energy-fuels/).
+
+## How this profile is made
+
+API Evangelist profiles a company's public API surface the way a developer would find it: the website, developer portal and documentation, the specifications it publishes, its public repositories, and its pricing, status and changelog pages. From that it derives the properties above — contracts split per API, workflows, schemas, collections, governance rules, plans and rate limits — and scores them against the published [Kin Score rubric](https://github.com/api-evangelist/kin-score).
+
+The artifacts are published on [APIs.io](https://apis.io), not in this repository. This repository is the public record for Clean Energy Fuels: the place to say something is wrong, missing or out of date, and to ask for a re-score or a removal.
+
+## Open an issue
+
+- **Something about this listing** — a wrong description, a missing API, a stale artifact or a question about the rating: [open an issue on this repository](https://github.com/api-evangelist/clean-energy-fuels/issues/new).
+- **A new API, or one that is not in the catalog yet** — [submit it on APIs.io](https://apis.io/add/).
+- **Anything else** — [the APIs.io inbox](https://github.com/api-search/inbox/issues/new) or [info@apievangelist.com](mailto:info@apievangelist.com).
